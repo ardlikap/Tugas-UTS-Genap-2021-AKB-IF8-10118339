@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.NoteFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.CreateNote">
+
+        <EditText
+            android:id="@+id/editJudul"
+            android:layout_width="391dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="14dp"
+            android:ems="10"
+            android:hint="Judul"
+            android:inputType="textPersonName"
+            android:textIsSelectable="false"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editKategori"
+            android:layout_width="391dp"
+            android:layout_height="44dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:ems="10"
+            android:hint="Ketegori"
+            android:inputType="textPersonName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editJudul" />
+
+        <EditText
+            android:id="@+id/editCatatan"
+            android:layout_width="391dp"
+            android:layout_height="482dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="14dp"
+            android:autoSizeTextType="uniform"
+            android:ellipsize="none"
+            android:ems="10"
+            android:gravity="left"
+            android:hint="Catatan"
+            android:inputType="textPersonName"
+            android:singleLine="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.375"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editKategori" />
+
+        <Button
+            android:id="@+id/action_save"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="11dp"
+            android:text="Simpan"
+            android:textColor="#000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editCatatan" />
+
+        <Button
+            android:id="@+id/action_delete"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="9dp"
+            android:text="Hapus"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editCatatan" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
